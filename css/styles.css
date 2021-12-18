@@ -162,7 +162,7 @@ body {
 }
 
 .testimonial {
-  height: 16rem;
+  height: 100%;
   background-color: hsl(300, 43%, 22%);
   padding: 2.5rem 2.5rem;
   border-radius: 0.5rem;
