@@ -71,6 +71,8 @@ body {
   justify-content: center;
 }
 
+/* ///////////////////////////////////////////////////////////// */
+/* General */
 .container {
   max-width: 95rem;
   /* background-color: rgb(132, 173, 90); */
@@ -89,6 +91,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* ///////////////////////////////////////////////////////////// */
+/* FIRST PART */
 .main-info-box {
   /* background-color: lightsalmon; */
   padding: 5.5rem 7rem;
@@ -105,6 +109,7 @@ body {
 .main-paragraph {
   color: hsl(300, 43%, 22%);
   font-size: 1.1rem;
+  line-height: 1.7;
 }
 
 .reviews-container {
@@ -116,19 +121,21 @@ body {
 }
 
 .review-box {
-  width: 29.4rem;
+  width: 28.4rem;
   background-color: hsl(300, 24%, 96%);
   border-radius: 0.4rem;
   margin-bottom: 1.2rem;
-  padding: 1rem 2.9rem;
+  padding: 1rem 2.6rem;
 
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .reviews-container span {
   font-size: 0.9rem;
-  margin-left: 1.2rem;
   font-weight: 700;
   color: hsl(300, 43%, 22%);
 }
@@ -155,9 +162,9 @@ body {
 }
 
 .testimonial {
-  height: 17rem;
+  height: 16rem;
   background-color: hsl(300, 43%, 22%);
-  padding: 3rem 2.4rem;
+  padding: 2.5rem 2.5rem;
   border-radius: 0.5rem;
 }
 
@@ -183,7 +190,7 @@ body {
 }
 
 .testimonial p {
-  color: hsl(303, 10%, 53%);
+  color: hsl(302, 12%, 62%);
   font-size: 0.9rem;
 }
 
@@ -201,44 +208,60 @@ body {
   margin-top: 3rem;
 }
 
-/* 375px */
-@media (max-width: 24em) {
+/* ///////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES */
+
+/*  */
+/*  */
+
+/* ///////////////////////////// */
+/*      344px MOBILE */
+/* ///////////////////////////// */
+@media (max-width: 34rem) {
+  .hero-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .container {
-    max-width: 24rem;
+    /* max-width: 24rem; */
     display: flex;
     flex-direction: column;
   }
 
   .main-info-box {
     /* background-color: lightsalmon; */
-    margin-top: 12rem;
-    padding: 2rem 1.6rem;
+    padding: 2rem 2.5rem;
   }
 
   .heading-primary {
     font-size: 2rem;
     text-align: center;
+    margin-top: 3rem;
   }
 
   .main-paragraph {
     text-align: center;
     font-size: 0.9rem;
-    margin: 0 0rem;
+    /* margin: 0 0rem; */
   }
 
   .reviews-container {
     /* background-color: lightcoral; */
     font-size: 0.7rem;
-    padding: 2rem 1.6rem;
+    padding: 2rem 2.5rem;
   }
 
   .review-box {
-    width: 20.4rem;
+    width: 100%; /*20.4rem */
     padding: 1rem 2.9rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   /* .reviews-container span {
@@ -249,7 +272,6 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 0.2rem;
-    padding-bottom: 0.9rem;
   }
 
   .star-icon {
@@ -262,5 +284,32 @@ body {
 
   .review-box-3 {
     margin-left: 0rem;
+  }
+
+  .testimonials-sections {
+    padding: 2rem 2.5rem;
+    column-gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .testimonial {
+    height: auto;
+    padding: 3rem 2.5rem;
+  }
+
+  .testimonial p {
+    color: hsl(303, 10%, 53%);
+    font-size: 0.9rem;
+  }
+
+  .testimonial--02 {
+    margin-top: 1.5rem;
+  }
+
+  .testimonial--03 {
+    margin-top: 1.5rem;
   }
 }
