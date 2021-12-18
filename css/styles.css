@@ -1,0 +1,266 @@
+/*
+
+  --- 01 TYPOGRAPHY SYSTEM
+
+  - Font size (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  - Space size (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+  - Font weights
+    Default: 400
+    Medium: 500
+    Semi-bold: 500
+    Bold: 500
+
+  - Line heights
+    Default: 1
+    Small: 1.05
+    Paragraph default: 1.6
+    Medium: 1.2
+    Large: 1.8
+
+  - Letter-spacing
+    -0.5px
+    0.75px;  
+
+  --- 02 COLORS
+  ### Primary
+
+   Very Dark Magenta: hsl(300, 43%, 22%)
+   Soft Pink: hsl(333, 80%, 67%)
+
+   ### Neutral
+
+  Dark Grayish Magenta: hsl(303, 10%, 53%)
+  Light Grayish Magenta: hsl(300, 24%, 96%)
+  White: hsl(0, 0%, 100%)
+
+
+  --- 05 SHADOWS
+
+
+  --- 06 BORDER-RADIUS
+    
+
+  --- 07 WHITESPACE
+
+  1rem = 16px
+
+  {}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Spartan", sans-serif;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 95rem;
+  /* background-color: rgb(132, 173, 90); */
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main-info-box {
+  /* background-color: lightsalmon; */
+  padding: 5.5rem 7rem;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  line-height: 1;
+  letter-spacing: 0.02rem;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 1.2rem;
+}
+
+.main-paragraph {
+  color: hsl(300, 43%, 22%);
+  font-size: 1.1rem;
+}
+
+.reviews-container {
+  /* background-color: lightcoral; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5.5rem 4.8rem;
+}
+
+.review-box {
+  width: 29.4rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 0.4rem;
+  margin-bottom: 1.2rem;
+  padding: 1rem 2.9rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.reviews-container span {
+  font-size: 0.9rem;
+  margin-left: 1.2rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+.review-box-2 {
+  margin-left: 3.2rem;
+}
+
+.review-box-3 {
+  margin-left: 6.2rem;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* SECOND PART */
+.testimonials-sections {
+  /* background-color: lightskyblue; */
+  padding-bottom: 4.8rem;
+  padding-right: 7rem;
+  padding-left: 7rem;
+  column-gap: 2.4rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial {
+  height: 17rem;
+  background-color: hsl(300, 43%, 22%);
+  padding: 3rem 2.4rem;
+  border-radius: 0.5rem;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1.6rem;
+}
+
+.heading-secondary {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.buyer-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 1.6rem;
+}
+
+.testimonial p {
+  color: hsl(303, 10%, 53%);
+  font-size: 0.9rem;
+}
+
+.testimonial blockquote {
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.testimonial--02 {
+  margin-top: 1.5rem;
+}
+
+.testimonial--03 {
+  margin-top: 3rem;
+}
+
+/* 375px */
+@media (max-width: 24em) {
+  .container {
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-info-box {
+    /* background-color: lightsalmon; */
+    margin-top: 12rem;
+    padding: 2rem 1.6rem;
+  }
+
+  .heading-primary {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .main-paragraph {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0 0rem;
+  }
+
+  .reviews-container {
+    /* background-color: lightcoral; */
+    font-size: 0.7rem;
+    padding: 2rem 1.6rem;
+  }
+
+  .review-box {
+    width: 20.4rem;
+    padding: 1rem 2.9rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* .reviews-container span {
+    margin-top: 1.2rem;
+  } */
+
+  .stars {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.2rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .star-icon {
+    margin-left: 0.4rem;
+  }
+
+  .review-box-2 {
+    margin-left: 0rem;
+  }
+
+  .review-box-3 {
+    margin-left: 0rem;
+  }
+}
